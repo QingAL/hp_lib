@@ -57,7 +57,7 @@ if __name__ == '__main__':
         try:
             if keyboard.is_pressed('q'):
                 bbox = small_bbox
-                img = ImageGrab.grab()
+                img = ImageGrab.grab(bbox)
                 img_path = "pics/" + "temp.png"
                 img.save(img_path)
                 baiduOCR('pics/temp.png')
