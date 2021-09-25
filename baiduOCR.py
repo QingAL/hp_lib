@@ -15,12 +15,13 @@ def fuzzyMatch(text):
         if matchtemp > matchfac:
             matchkey = key
             matchfac = matchtemp
-    print("ORC:", end="")
+    print("OCR:", end="")
     print(text)
     print("match:", end="")
     print(matchkey)
     print("answer:", end="")
     print(hp_lib[matchkey])
+    print("*********************************************")
 
 
 def baiduOCR(picfile):
@@ -46,7 +47,7 @@ def baiduOCR(picfile):
 
 if __name__ == '__main__':
     hp_lib = np.load('hp_lib.npy', allow_pickle=True).item()
-    small_bbox = (2462, 481, 3671, 741)
+    small_bbox = (299, 642, 1064, 759)
     big_bbox = (300, 1000, 1800, 1250)
     imgPath = "pics/"
     folder = os.path.exists(imgPath)
