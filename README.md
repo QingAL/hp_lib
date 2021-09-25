@@ -16,7 +16,7 @@ pip install pyautogui
 python mousePosition.py
 ```
 用来检测问题框的屏幕坐标，分别将鼠标放在问题框的左上角和右下角，记录位置坐标。  
-有的问题框坐标会变化，可以记录多次，分别代替52、53行的代码
+有的问题框坐标会变化，可以记录多次，分别代替baiduOCR.py 中 52、53行的代码
 
 ## baiduOCR.py
 ### 运行
